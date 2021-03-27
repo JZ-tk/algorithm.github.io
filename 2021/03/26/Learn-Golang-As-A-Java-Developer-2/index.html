@@ -5,20 +5,24 @@
   
   <title>Learn Golang As A Java Developer 2 | CODEKIN</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Here are some advanced tips:  Unlike in C or Java, in Go assignment between items of different type requires an explicit conversion.       Method:Go does not have classes. However, you can define meth">
+  <meta name="description" content="Here are some more knowledges:  Unlike in C or Java, in Go assignment between items of different type requires an explicit conversion.       Method:Go does not have classes. However, you can define me">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Learn Golang As A Java Developer 2">
 <meta property="og:url" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/index.html">
 <meta property="og:site_name" content="CODEKIN">
-<meta property="og:description" content="Here are some advanced tips:  Unlike in C or Java, in Go assignment between items of different type requires an explicit conversion.       Method:Go does not have classes. However, you can define meth">
+<meta property="og:description" content="Here are some more knowledges:  Unlike in C or Java, in Go assignment between items of different type requires an explicit conversion.       Method:Go does not have classes. However, you can define me">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Java_implicit_conversion.png">
 <meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Golang_explicit_conversion.png">
 <meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Golang_Methods.png">
 <meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Golang_intreface.png">
 <meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Golang_interface_print.png">
+<meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error1.png">
+<meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error1_print.png">
+<meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error2.png">
+<meta property="og:image" content="https://jz-tk.github.io/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error2_print.png">
 <meta property="article:published_time" content="2021-03-25T21:58:40.000Z">
-<meta property="article:modified_time" content="2021-03-27T05:41:31.605Z">
+<meta property="article:modified_time" content="2021-03-27T10:47:59.235Z">
 <meta property="article:author" content="CODEKIN">
 <meta property="article:tag" content="Go">
 <meta name="twitter:card" content="summary">
@@ -116,7 +120,7 @@
                     </div>
                 </h1>
 
-                <p>Here are some advanced tips:</p>
+                <p>Here are some more knowledges:</p>
 <ol>
 <li><p>Unlike in C or Java, in Go assignment between items of different type requires an explicit conversion.</p>
  <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Java_implicit_conversion.png" class="" title="[Java_implicit_conversion]">
@@ -132,6 +136,19 @@
 
 <p> Output:</p>
  <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/Golang_interface_print.png" class="" title="[Golang_interface_print]">
+</li>
+<li><p>errors</p>
+<p> There is no exception but error in Golang. In Golang the functions can return two values, the first is the value which you want from the function, the second value is the error if the error happend. You should handle errors by testing whether the error equals <code>nil</code>. A nil <code>error</code> denotes success; a non-nil <code>error</code> denotes failure.</p>
+ <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error1.png" class="" title="[error1]">
+
+<p> Print:</p>
+ <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error1_print.png" class="" title="[error1_print]">
+
+<p> Error type is an interface type, of course you can create you own error,</p>
+ <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error2.png" class="" title="[error2]">
+
+<p> Print:</p>
+ <img src="/algorithm.github.io/2021/03/26/Learn-Golang-As-A-Java-Developer-2/error2_print.png" class="" title="[error2_print]">
 
 </li>
 </ol>
